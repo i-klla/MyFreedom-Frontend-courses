@@ -1,0 +1,22 @@
+{
+  "name": "22-npm",
+  "version": "1.0.0",
+  "description": "testing npm",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "start-nodemon": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "date-fns": "^4.1.0",
+    "sass": "^1.86.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "23.-parcel",
+  "version": "1.0.0",
+  "target": "index.html",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.14.4",
+    "p": "^0.2.0",
+    "parcel": "^2.14.4"
+  },
+  "targets": {
+    "default": {
+      "distDir": "build"
+    }
+  }
+}
