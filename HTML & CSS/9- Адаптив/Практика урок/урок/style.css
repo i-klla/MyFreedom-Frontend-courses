@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1146px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+header {
+    padding: 53px 20px;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo_text {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 42.77px;
+    letter-spacing: 2px;
+    color: #0F044C;
+}
+
+.header_nav {
+    display: flex;
+    gap: 48px;
+}
+
+.header_nav a {
+    font-weight: 800;
+    font-size: 14.4px;
+    line-height: 29.94px;
+    letter-spacing: 2px;
+    color: #080800;
+}
+
+.header_phone {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header_phone_number {
+    font-weight: 800;
+    font-size: 14.4px;
+    line-height: 29.94px;
+    letter-spacing: 2px;
+    color: #30233D;
+}
+
+.header_burger {
+    display: none;
+    margin-left: 89px;
+    cursor: pointer;
+}
+
+.welcome_section {
+    padding: 126px 20px 115px 20px;
+    background-image: url('./images/welcome-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome_title1,
+.welcome_title2 {
+    color: #FCFCFC;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 80.19px;
+    margin-bottom: 22px;
+}
+
+.welcome_title2 {
+    display: none;
+}
+
+.welcome_subtitle {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25.9px;
+    letter-spacing: 2px;
+    color: #F4F4ED;
+}
+
+footer {
+    padding: 84px 20px 72px 20px;
+    background-color: #080800;
+}
+
+.footer_text {
+    color: white;
+    font-size: 11.7px;
+    line-height: 19.11px;
+}
+
+.footer_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer_icons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+
+@media screen and (max-width: 992px) { /*992px и меньше*/
+    .header_nav {
+        display: none;
+    }
+
+    .header_burger {
+        display: block;
+    }
+
+    .container {
+        max-width: 950px;
+    }
+
+    .welcome_title1,
+    .welcome_title2,
+    .welcome_subtitle {
+        text-align: center;
+    }
+
+    footer {
+        padding: 25px 20px 41px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header_phone_icon {
+        display: none;
+    }
+    .header_phone_number {
+        display: none;
+    }
+    .container {
+        max-width: 489px;
+    }
+    .welcome_section {
+        padding: 106px 20px;
+    }
+    .welcome_title1 {
+        display: none;
+    }
+    .welcome_title2 {
+        display: block;
+        font-size: 39px;
+        line-height: 57.92px;
+    }
+    .welcome_subtitle {
+        max-width: 350px;
+        margin-inline: auto;
+    }
+    footer {
+        padding: 33px 20px;
+    }
+}

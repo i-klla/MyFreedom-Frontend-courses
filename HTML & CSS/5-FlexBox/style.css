@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1 {
+    width: 400px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.box2 {
+    width: 200px;
+    height: 400px;
+    background-color: chocolate;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flexbox1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(127, 201, 114);
+
+}
+
+.flexbox2{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(234, 134, 236);
+    
+}
+
+.flexbox3 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(150, 212, 235);
+
+}
+
+.flex-container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+}

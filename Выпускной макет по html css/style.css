@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    background: url(./images/Background_main.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 754px;
+}
+
+.container {
+   max-width: 1153px;
+   margin: 0 auto;
+}
+
+.button {
+    border: none;
+    width: Hug (91px)px;
+    height: Hug (40px)px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background: #F84646;
+    color: #fff;
+}
+
+.button:hover {
+    background: #f84646d6;
+}
+
+.burgerBtn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 42px;
+}
+
+.title {
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 64px;
+ 
+}
+
+.description {
+    font-family: Manrope;
+    font-weight: 400;
+    letter-spacing: 0.20000004768371582px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.container_header {
+    padding-top: 45px;
+}
+
+.section_header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+}
+
+.header_menu {
+    display: flex;
+    gap: 40px;
+}
+
+.header_menu a {
+    text-decoration: none;
+    color: #000;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    max-width: 136px;
+}
+
+.header_menu a:hover {
+    color: #00000084;
+}
+
+.section_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    width: 665px;
+    height: 406px;
+    margin-top: 135px;
+}
+
+.main_title {
+    width: 665px;
+    height: 164px;
+    font-size: 64px;
+    line-height: 82px;
+}
+
+.description_main {
+    width: 650px;
+    height: 99px;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: start;
+}
+
+.section_input {
+    width: 502px;
+    height: 73px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.input_main {
+    border: none;
+    width: 502px;
+    height: 73px;
+    border-radius: 8px;
+    padding: 19px 0 18px 32px;
+    font-family: Manrope; /* Шрифт */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: 400; /* Насыщенность шрифта */
+    line-height: 36px; /* Высота строки */
+    letter-spacing: 0.2px; /* Межбуквенное расстояние */
+}
+.input_main::placeholder {
+    width: 178px; /* Ширина (в большинстве случаев для placeholder этот параметр не применяется) */
+    height: 36px; /* Высота (не влияет на placeholder) */
+    font-family: Manrope; /* Шрифт */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: 400; /* Насыщенность шрифта */
+    line-height: 36px; /* Высота строки */
+    letter-spacing: 0.2px; /* Межбуквенное расстояние */
+}
+
+.input_button {
+    position: absolute;
+    width: 136px;
+    height: 61px;
+    top: 6px;
+    right: 6px;
+    border-radius: 8px;
+}
+
+.qualityAndProcess_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qualityAndProcessTitleDescription {
+    height: 195px;
+    margin-top: 120px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.qualityAndProcess_title{
+    width: 428px;
+    height: 56px;
+    font-size: 36px;
+    line-height: 49.18px;
+  
+}
+
+.qualityAndProcessDescription {
+    max-width: 994px;
+    height: 109px;
+    font-size: 24px;
+    line-height: 39.5px;
+}
+
+.qualityAndProcess_info {
+    max-width: 1153px;
+    height: 508px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки равной ширины */
+    row-gap: 80px; /* Расстояние между рядами */
+    column-gap: 116px; /* Расстояние между колонками */
+    margin-bottom: 140px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 298px;
+    height: 250px;
+}
+
+.card img {
+    width: 79px;
+    height: 77px;
+}
+.card h4 {
+    height: 31px;
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.78px;
+}
+.card p {
+    height: 84px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.20000004768371582px;
+    font-family: Manrope;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.section_testManagement {
+    background-color: #F84646;
+    height: 376px;
+    display: flex;
+}
+
+.testManagementTitleDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 68px;
+    margin-bottom: 60px;
+}
+
+.testManagement_title {
+    color: #FFFFFF;
+    width: 836px;
+    height: 64px;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.testManagement_description {
+    width: 836px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.testManagement_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    gap: 46px;
+
+}
+
+.testManagement_info p { 
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+
+.testManagement_info img {
+    width: 32px;
+    height: 32px;
+}
+
+.section_information {
+    padding: 160px 0 40px 0;
+}
+
+.information_card {
+    display: flex;
+    gap: 85px;
+    width: 1197px;
+    height: 480px;
+    margin-bottom: 120px;
+}
+
+.cardInfoTitle {
+    width: 608px;
+    height: 152px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76px;
+    text-align: left;
+    color: #2E2E2E;
+    margin-bottom: 40px;
+}
+
+.cardInfoDescription {
+    width: 523px;
+    height: 160px;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    color: #808080;
+    margin-bottom: 80px;
+}
+
+.cardInfo_button {
+    width: 160px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.information_card img {
+    width: 504px;
+    height: 480px;
+}
+
+.infoCard_img2 {
+    margin-right: 85px;
+}
+
+.section_references {
+    background-color: #F4F5F7;
+    padding: 59px 0;
+}
+
+.referencesTitleDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 48px;
+}
+
+.references_title{
+    font-size: 48px;
+}    
+
+.references_description{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.references_logos {
+    display: grid;
+    grid-template-columns: repeat(5, 170px);
+    gap: 24px;
+    justify-content: center;
+}
+
+.columnFirst,
+.columnSecond,
+.columnThird,
+.columnFourth,
+.columnFifth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.section_contacts {
+    padding: 160px 0;
+}
+
+.contactsTitleDescription {
+    height: 314px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contactsTitleDescription img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.contacts_title {
+    width: 256px;
+    height: 32px;
+    font-size: 48px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.contacts_description {
+
+    height: 32px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.contacts_button {
+    width: 204px;
+    height: 70px;
+    border-radius: 8px;
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+footer {
+    height: 536px;
+    background-color: #F8464A;
+    color: white;
+    padding: 80px 0;
+}
+
+.footer_menu {
+    display: grid;
+    grid-template-columns: repeat(4, 265.51px); /* 4 колонки */
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.menuSection h3 {
+    height: 24px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 24px;
+}
+
+.menuSection ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+}
+
+
+.menuSection a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.menuSection a:hover {
+    color: #dddddd;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_social p {
+    height: 32px;
+    font-family: Inter;
+    line-height: 32px;
+}
+
+.footer_social ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+}
+.footer_social a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_social img {
+    width: 32px;
+    height: 32px;
+    transition: filter 0.3s;
+}
+
+.footer_social img:hover {
+    filter: invert(70%);
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        height: 647px;
+    }
+    
+    .container {
+       width: 900px;
+       margin: 0 auto;
+    }
+    
+    .section_main {
+        height: 359px;
+        margin-top: 96px;
+    }
+    
+    .section_input {
+        width: 422px;
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    .input_main {
+        border: none;
+        width: 422px;
+    }
+    
+    .input_button {
+        position: absolute;
+        width: 114.33px;
+        top: 6px;
+        right: 6px;
+        border-radius: 8px;
+    }
+
+    .section_qualityAndProcess {
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
+
+    .qualityAndProcessDescription {
+        height: 109px;
+        max-width: 852px;
+    }
+
+    .qualityAndProcess_info {
+        height: 950px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 3 колонки равной ширины */
+        row-gap: 88px; /* Расстояние между рядами */
+    }
+
+    .card {
+        display: flex;
+        gap: 10px;
+        height: 212px;
+    }
+
+    .card img {
+        width: 76px;
+        height: 76px;
+    }
+
+    .testManagementTitleDescription {
+        margin-top: 65px;
+        margin-bottom: 55px;
+    }
+
+    .testManagement_info {
+        height: 52.77px;
+        gap: 35.91px;
+    }
+
+    .testManagement_info p { 
+        font-size: 14px;
+        line-height: 21.5px;
+    }
+
+    .testManagement_info img {
+        width: 28.29px;
+        height: 27.24px;
+    }
+
+    .section_information {
+        padding: 160px 60px 160px;
+    }
+
+    .information_card {
+        display: flex;
+        gap: 30px;
+        width: 904px;
+        height: 404px;
+    }
+
+    .cardInfoTitle {
+        width: 450px;
+        height: 119px;
+        font-size: 58px;
+        line-height: 59.5px;
+        margin-bottom: 20px;
+    }
+
+    .cardInfoDescription {
+        width: 428px;
+        height: 171px;
+        font-size: 14px;
+        line-height: 28.5px;
+        margin-bottom: 46px;
+    }
+
+    .information_card img {
+        width: 424px;
+        height: 404px;
+    }
+
+    .infoCard_img2 {
+        margin-right: 20px;
+    }
+
+    .section_references {
+        padding: 45px 0;
+    }
+
+    .section_contacts {
+        padding: 160px 0;
+    }
+
+    footer {
+        padding: 70px 0;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    main {
+        height: 601px;
+    }
+    
+    .container {
+       max-width: 335px;
+       margin: 0 auto;
+    }
+    
+    .container_header {
+        padding-top: 35px;
+    }
+    
+    .section_header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header_menu {
+        display: none;
+    }
+
+    .burgerBtn {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .section_main {
+        width: 335px;
+        height: 379.85px;
+        margin-top: 62px;
+    }
+    
+    .main_title {
+        width: 335px;
+        height: 164px;
+        font-size: 42px;
+        line-height: 57.5px;
+        text-align: center;
+    }
+    
+    .description_main {
+        width: 335px;
+        height: 87px;
+        font-size: 12px;
+        line-height: 23px;
+        text-align: center;
+    }
+    
+    .section_input {
+        width: 335px;
+        height: 59.85px;
+        margin-top: 43px;
+        position: relative;
+    }
+    
+    .input_main {
+        border: none;
+        width: 335px;
+        height: 59.85px;
+        border-radius: 8px;
+        padding: 13px 0 17.34px 21.35px;
+        font-size: 14px; /* Размер шрифта */
+    }
+
+    .input_main::placeholder {
+        width: 194px; /* Ширина (в большинстве случаев для placeholder этот параметр не применяется) */
+        height: 29.52px; /* Высота (не влияет на placeholder) */
+        font-size: 14px; /* Размер шрифта */
+        line-height: 36px; /* Высота строки */
+    }
+    
+    .input_button {
+        position: absolute;
+        width: 90.76px;
+        height: 50.01px;
+        top: 6px;
+        right: 6px;
+        border-radius: 8px;
+    }
+    
+    .section_qualityAndProcess {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qualityAndProcessTitleDescription {
+        height: 155px;
+        margin-top: 60px;
+        gap: 15px;
+    }
+    
+    .qualityAndProcess_title{
+        width: 286px;
+        height: 31px;
+        font-size: 24px;
+        line-height: 32.78px;
+      
+    }
+    
+    .qualityAndProcessDescription {
+        max-width: 334px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    
+    .qualityAndProcess_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        width: 335px;
+        height: 1665px;
+        margin-bottom: 90px;
+    }
+    
+    .card {
+        height: 212px;
+    }
+    
+    .card img {
+        width: 76px;
+        height: 76px;
+    }
+    
+    .section_testManagement {
+        height: 865px;
+    }
+    
+    .testManagementTitleDescription {
+        margin-top: 50px;
+        margin-bottom: 35px;
+    }
+    
+    .testManagement_title {
+        width: 335px;
+        height: 94px;
+        font-size: 36px;
+        line-height: 47px;
+        text-align: center;
+    }
+    
+    .testManagement_description {
+        width: 190px;
+        font-size: 14px;
+    }
+    
+    .testManagement_info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px; 
+        height: auto; /* Уберает фиксированную высоту */
+        padding: 16px 16px 84px; /* отступы для мобильного удобства */
+
+    }
+    
+    .testManagement_info p { 
+        width: 190px;
+        line-height: 24.59px;
+        text-align: center;
+    }
+    
+    .testManagement_info img {
+        width: 36px;
+        height: 36px;
+        transform: rotate(90deg);
+    }
+    
+    .section_information {
+        padding: 90px 0 79px 0;
+        height: 1695px;
+    }
+    
+    .information_card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 338px;
+        height: 733px;
+        margin-bottom: 120px;
+    }
+    
+    .cardInfoTitleDescription {
+        order: 1;
+    }
+    
+    .cardInfoTitle {
+        width: 335px;
+        height: 83px;
+        font-size: 36px;
+        line-height: 41.5px;
+        text-align: center;
+        color: #2E2E2E;
+        margin-bottom: 20px;
+    }
+    
+    .cardInfoDescription {
+        width: 336px;
+        height: 200px;
+        font-size: 14px;
+        line-height: 28.5px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .cardInfo_button {
+        width: 338px;
+        border-radius: 8px;
+
+    }
+    
+    .information_card img {
+        width: 335px;
+        height: 312px;
+        order: -1; /* Перемещает изображение выше текста */
+    }
+    
+    .infoCard_img2 {
+        margin-right: 0;
+        content: url('./images/Illustration.jpg');
+    }
+    
+    .section_references {
+        padding: 40px 0;
+    }
+    
+    .referencesTitleDescription {
+        gap: 14px;
+        margin-bottom: 40px;
+    }
+    
+    .references_title{
+        
+        font-size: 36px;
+    }    
+    
+    .references_description{
+        font-size: 13px;
+    }
+    
+    .references_logos {
+        grid-template-columns: repeat(1, 170px);
+    }
+    
+    .section_contacts {
+        padding: 90px 0;
+    }
+    
+    .contactsTitleDescription {
+        height: 335px;    
+    }
+    
+    .contactsTitleDescription img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+    
+    .contacts_title {
+        width: 192px;
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+    
+    .contacts_description {
+        height: 50px;
+        font-size: 12px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .contacts_button {
+        width: 124px;
+        height: 42px;
+        font-size: 16px;
+    }
+    
+    footer {
+        height: 1340px;
+        background-color: #F8464A;
+        color: white;
+        padding: 80px 0;
+    }
+    
+    .footer_menu {
+        grid-template-columns: repeat(1, 265.51px); /* 4 колонки */
+        gap: 49px;
+        margin-bottom: 29.89px;
+    }
+    
+    .footer_social {
+        display: flex;
+        flex-direction: column;
+        gap: 62.11px;
+    }
+    
+    .footer_social ul {
+        order: -1;
+    }
+}

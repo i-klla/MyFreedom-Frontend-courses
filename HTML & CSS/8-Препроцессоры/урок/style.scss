@@ -1,0 +1,28 @@
+@import 'global';
+
+
+.box1 {
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+    
+    &:hover {
+        background-color: darkgoldenrod;
+    }
+    .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: darkslateblue;
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    .box3 {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+    }
+}

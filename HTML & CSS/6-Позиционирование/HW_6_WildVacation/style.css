@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+     
+}
+
+p {
+    color: white;
+}
+
+.container {
+    max-width: 1133px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+body {
+    /* background: url(../HW_6_WildVacation/images/Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(101, 100, 100);
+}
+
+.section_header {
+    display: flex;
+    gap: 179px;
+    align-items: end;
+    height: 64px;
+    margin-top: 25px;
+}
+
+.section_header_logo_localization {
+    display: flex;
+    gap: 26px;
+    align-items: end;
+}
+
+.wild_logo {
+    padding-bottom: 5px;
+}
+
+.localization {
+    display: flex;
+    gap: 21px;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.localization p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.section_header_menu_button {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+menu a {
+    width: 53px;
+    max-width: 100%;
+    height: 34.86px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.localization p:hover,
+.menu a:hover  {
+    color: #C4C4C480;
+}
+
+.button {
+    border: 1px solid #FFB800;
+    border-radius: 10px;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: white;
+    cursor: pointer;
+    padding: 6px 35px; 
+}

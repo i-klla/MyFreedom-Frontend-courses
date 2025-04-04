@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Open Sans;
+    background-color: #FFFAF3;
+    color: #3F4042;
+    overflow-x: hidden;
+  }
+
+.container {
+    max-width: 1440px;
+    padding: 50px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+
+.header_content {
+    display: flex;
+    gap: 83.36px;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 38.64px;
+    height: 59px;
+}
+
+.nav_menu {
+    display: flex;
+    gap: 55px;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.nav_menu a:hover {
+    color: #C08D5D;
+}
+
+.underline {
+    width: 100%;
+    max-width: 470px;
+    height: 1px;
+    background-color: #C08D5D;
+    margin-top: 42.5px;
+}
+
+.main_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_text {
+    max-width: 600px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-family: Yeseva One;
+    font-size: 50px;
+    gap: 10px;
+}
+
+.title_logo {
+    width: 45.21px;
+    height: 69.04px;
+}
+
+.main_title {
+    font-family: Yeseva One;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.divider {
+    margin-bottom: 20px;
+}
+  
+.description {
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 26.57px;
+    margin-bottom: 40px;
+    letter-spacing: 0.06em;
+}
+
+.cta_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 197px;
+    height: 64px;
+    border: 1px solid #C08D5D;
+    background-color: #FFFAF3;
+    color: #3F4042;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29.52px;
+    letter-spacing: 0.06em;
+    padding: 0 20px;
+    cursor: pointer;
+    position: relative; /* Установите для кнопки позицию relative */
+    overflow: hidden; /* Предотвращает выход элементов за пределы кнопки */
+    transition: all 0.3s ease;    
+}
+
+.cta_button::after {
+    content: "→";
+    width: 59px;
+    height: 100%;
+    background-color: #C08D5D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Позиционируется относительно кнопки */
+    top: 0; /* Верхняя граница кнопки */
+    right: 0; /* Правая граница кнопки */
+    transition: all 0.3s;
+}
+
+.cta_button:hover::after {
+    transform: translateX(5px); /* При наведении стрелка смещается вправо */
+}
+
+.section_image {
+    max-width: 660px;
+    height: 878px;
+    position: absolute;
+    top: 0;
+    right: 20%;
+}
+
+.scroll_indicator {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.scroll_indicator img {
+    width: 33.47px;
+    height: 69.8px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+  
+.scroll_indicator img:hover {
+    opacity: 1;
+}

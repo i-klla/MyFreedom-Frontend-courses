@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Vacation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header_container">
+        <div class="section_header">
+          <div class="section_header_logo_localization">
+            <img class="wild_logo" src="../HW_6_WildVacation/images/Wild_Logo.svg" alt="Wild Logo">
+            <div class="localization">
+              <p>Eng</p>
+              <p>Rus</p>
+            </div>
+          </div>
+          <div class="section_header_menu_button">
+            <nav class="menu">
+              <a href="#">О нас</a>
+              <a href="#">Туры</a>
+              <a href="#">Визы</a>
+              <a href="#">Агентам</a>
+              <a href="#">Контакты</a>
+            </nav>
+            <button class="button">Помощь</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container main_container">
+        <div>
+          <h1>Исследуйте мир вместе с нами</h1>
+          <p>Брось себе вызов. Отправься в путешествия в дикие уголки природы.</p>
+        </div>
+        <form class="form">
+          <p>Быстрый поиск тура</p>
+          <input placeholder="Куда" type="text">
+          <div>
+            <p>Даты поездки</p>
+            <input type="date">
+            <input type="date">
+          </div>
+          <div>
+            <select name="typeOfVacation">
+              <option selected value="typeOfVacation">Тип тура</option>
+              <option value="#">-----</option>
+              <option value="#">-----</option>
+              <option value="#">-----</option>
+              <option value="#">-----</option>
+              <option value="#">-----</option>
+            </select>
+          </div>
+          <button type="submit">Найти</button>
+        </form>
+      </div>
+     
+    </main>
+  </body>
+</html>

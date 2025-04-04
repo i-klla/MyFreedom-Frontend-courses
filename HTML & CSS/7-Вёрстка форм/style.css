@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form1 {
+    padding: 50px;
+    background-color: rgb(147, 162, 162);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.form1 input {
+    max-width: 200px;
+    width: 100%;
+}
+
+.form2 {
+    padding: 50px;
+    background-color: rgb(115, 169, 169);
+}

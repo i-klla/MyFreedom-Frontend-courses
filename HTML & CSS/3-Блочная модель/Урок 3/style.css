@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    padding: 20px 0;
+}
+
+.header_container {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.logo h1 {
+    font-size: 32px;
+    color: black;
+}
+
+.logo h1 span {
+    color: #1193be;
+}
+
+.logo p {
+    color: grey;
+    font-size: 12px;
+}
+
+.line {
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    background-color: rgba(179, 178, 178, 0.603);
+}
+
+.text {
+    width: 400px;
+}
+
+.text span {
+    color: #3597b7;
+}
+
+
+
+.nav {
+    display: flex;
+    background-color: #1193be;
+    gap: 15px;
+    padding: 0 150px;
+    margin-top: 30px;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-right: 1px solid white;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    vertical-align: middle;
+
+}
+
+.header_nav {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 180px;
+    margin-right: 150px;
+
+}
+
+.header_nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    margin-inline: 5px;
+}
+
+.header_nav a:hover {
+    text-shadow: 0 0 5px darkcyan; 
+    font-weight: 550;
+    text-decoration: underline;
+}
+
+.signup_button, .login_button {
+    margin-left: auto;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: darkcyan;
+    border-radius: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+    vertical-align: middle;
+
+}
+
+.login_button {
+    color: darkcyan;
+    background-color: white; 
+    border: 1px solid darkcyan;  
+}
+
+.signup_button:hover {
+    color: darkcyan;
+    background-color: white;
+    border: 1px solid darkcyan;
+}
+
+.login_button:hover {
+    color: white;
+    background-color: darkcyan;
+    border: 1px solid none;
+}
+
+.line {
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    background-color: aliceblue;
+}

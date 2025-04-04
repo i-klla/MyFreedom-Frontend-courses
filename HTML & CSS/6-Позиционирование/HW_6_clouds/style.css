@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 50px 100px 0 50px;
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7CDAEF;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    background-color: #0E497EB2;
+    padding: 78px 79px 176px 99px;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 104px;
+}
+
+.someText {
+    max-width: 743px;
+    width: 100%;
+}
+
+.someText h2, .gallery h3{
+    color: white;
+}
+
+.someText h2 {
+    font-family: Play;
+    max-width: 313px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.28px;
+}
+
+.gallery h3 {
+    font-family: Play;
+    max-width: 107;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.02px;
+    padding-bottom: 51px;
+}
+
+.someText p {
+    font-family: Play;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.14px;
+    padding-top: 26px;
+}
+
+.section_clouds {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.cloud_1, .cloud_2, .cloud_3 {
+    position: absolute;
+   
+}
+
+.cloud_1 {
+    top: -59px;
+    right: -155px;
+    width: 339.66px;
+    height: 141.32px;
+}
+
+.cloud_2 {
+    top: 150px;
+    left: -200px;
+    width: 362.55px;
+    height: 157.79px;
+    z-index: -1;
+}
+
+.cloud_3 {
+    top: 430px;
+    right: -210px;
+    width: 468px;
+    height: 216.74px;
+    z-index: -1;
+}
+
+.grass {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 132px;
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    padding: 5px;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+    width: 400px;
+    height: 50px;
+    padding-left: 5px;
+    background-color: brown;
+    color: white;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+
+.section-header img{
+    width: 80px;
+}
+
+.section-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.section-body__news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    margin: 20px;
+}
+
+
+.section-body__team {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-body__team img {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.section-card {
+    width: 400px;
+    height: 200px;
+    border: 1px solid brown;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: brown;
+    color: white;
+}

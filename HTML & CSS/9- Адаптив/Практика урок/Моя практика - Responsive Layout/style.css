@@ -1,0 +1,286 @@
+ @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+     
+}
+
+.container {
+    max-width: 1146px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+header {
+    padding: 53px 20px;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo_text {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 42.77px;
+    letter-spacing: 2px;
+    color: #0F044C;
+}
+
+.header_nav {
+    display: flex;
+    gap: 48px;
+}
+
+.header_nav a {
+    font-weight: 800;
+    font-size: 14.4px;
+    line-height: 29.94px;
+    letter-spacing: 2px;
+    accent-color: #080800;
+}
+
+.header_phone {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header_phone_number {
+    font-weight: 800;
+    font-size: 14.4px;
+    line-height: 29.94px;
+    letter-spacing: 2px;
+    accent-color: #30223D;
+}
+
+.header_burger {
+    display: none;
+    margin-left: 89px;
+}
+
+
+.welcome_section {
+    padding: 126px 20px 115px 20px;
+    background-image: url(./images/welcome-phone.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome_title1,
+.welcome_title2 {
+    color: #FCFCFC;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 63.35px;
+    margin-bottom: 22px;
+}
+
+.welcome_title2 {
+    display: none;
+}
+
+.welcome_subtitle {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25.9px;
+    letter-spacing: 2px;
+    color: #F4F4ED;
+}
+
+footer {
+    padding: 84px 20px 72px 20px;
+    background-color: black;
+}
+
+.footer_text {
+    color: white;
+    font-size: 11.7px;
+    line-height: 19.11px;
+}
+
+.footer_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer_icons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.info_text {
+    padding-bottom: 54px;
+}
+
+.info_text h2{
+    color: #A22F32;
+    font-weight: 800;
+    font-size:20px;
+    line-height: 41.58px;
+    letter-spacing: 4px;
+}
+
+.info_text p {
+    color: #30233D;
+    font-size: 21.6px;
+    line-height: 35.28px;
+    max-width: 800px;
+    width: 100%;
+    height: 105px;
+
+}
+
+.info_container {
+    padding-top: 69px;
+    padding-bottom: 71px;
+}
+
+.info_card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.card {
+    border: 1px solid #F61067;
+    padding: 39px 36px 64px 36px;
+}
+
+.card h2 {
+    color: #30233D;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 32.68px;
+    margin-top: 33px;
+}
+
+.card p {
+    color: #30233D;
+    font-size: 16.2px;
+    line-height: 26.46px;
+    max-width: 290px;
+    width: 100%;
+    margin-top: 21px;
+}
+
+
+@media screen and (max-width: 992px)  {
+    .header_nav {
+        display: none;
+    }
+
+    .header_burger {
+        display: block;
+    }
+
+    .container {
+        max-width: 950px;
+    }
+
+    .welcome_title1, 
+    .welcome_title2, 
+    .welcome_subtitle {
+        text-align: center;
+    }
+
+    .info_container {
+        padding: 51px 21px 81px 21px;
+    }
+
+    .info_text p {
+        font-size: 20px;
+        font-weight: 500;
+        max-width: 830px;
+        width: 100%;
+        height: 96px;
+    }
+
+    .card {
+        padding: 22px 59px 34px 57px;  
+    }
+
+    .info_card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 31px;
+        row-gap: 31px;
+    }
+
+
+    footer {
+        padding: 25px 20px 41px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header_phone_icon {
+        display: none;
+    }
+
+    .header_phone_number {
+        display: none;
+    }
+
+    .container {
+        max-width: 489px;
+    }
+
+    .welcome_section {
+        padding: 107px 20px;
+    }
+
+    .welcome_title1 {
+        display: none;
+    }
+
+    .welcome_title2 {
+        display: block;
+        font-size: 39px;
+        line-height: 57.92px;
+    }
+
+    .welcome_subtitle {
+        max-width: 350px;
+        margin-inline: auto;
+    }
+
+    .info_container {
+        padding: 60px 44px 53px 45px;
+    }
+
+    .info_text p {
+        line-height: 36px;
+        max-width: 487px;
+        width: 100%;
+        height: 144px;
+    }
+
+    .card {
+        padding: 34px 50px 50.1px 44px;  
+    }
+
+    .info_card {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 33px;
+    }
+
+    footer {
+        padding: 33px 20px;
+    }
+}

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.move-to {
+    display: inline-block;
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+    padding-left: 26px;
+    line-height: 64px;
+
+}
+
+.move-to::after {
+    content: '>';
+    display: inline-block;
+    width: 59px;
+    height: 64px;
+    background-color: rgb(92, 171, 197);
+    color: white;
+    line-height: 64px;
+    text-align: center;
+    margin-left: 26px;
+}
