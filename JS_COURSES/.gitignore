@@ -2,3 +2,4 @@ node_modules
 *-lock.json
 dist
 .parsel-cache
+build
