@@ -1,4 +1,5 @@
 import HomePage from "./pages/HomePage/HomePage"
+import TestPage from "./pages/TestPage/TestPage"
 
 function App() {
 
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <HomePage/>
+
     </>
   )
 }
