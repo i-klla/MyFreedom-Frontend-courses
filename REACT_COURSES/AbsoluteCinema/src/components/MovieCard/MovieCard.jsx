@@ -4,15 +4,15 @@ import placeholderImage from '../../assets/images/placeholder-image.png';
 import { StarFillIcon } from '../../shared/Icons';
 
 
-function MovieCard() {
+function MovieCard({language, title, description, releaseDate, rating, images}) {
     return (
         <>
         <Card>
-            <Card.Img className={classes.cardPoster} variant="top" src={placeholderImage} />
+            <Card.Img className={classes.cardPoster} variant="top" src={images || placeholderImage} />
             <Card.Body>
             <Card.Text>
                 <Badge bg="dark" text="light">
-                    EN
+                    {language}
                 </Badge>
             </Card.Text >
             <div className='mb-2'>
@@ -28,17 +28,16 @@ function MovieCard() {
                     </Badge>
                 </Stack>
             </div>
-            <Card.Title>Movie Title</Card.Title>
-            <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+            <Card.Title className={classes.title} >{title}</Card.Title>
+            <Card.Text className={classes.description}>
+                {description}
             </Card.Text>
             <Card.Text>
-                <b>Realese date:</b> 2025-03-31
+                <b>Realese date:</b> {releaseDate}
             </Card.Text>
             <div className='mb-3'>
                     <Stack direction='horizontal' gap='1'>
-                        <StarFillIcon/> 6/10
+                        <StarFillIcon/> {rating}/10
                     </Stack>
             </div>
             <Button variant="primary">See more</Button>
