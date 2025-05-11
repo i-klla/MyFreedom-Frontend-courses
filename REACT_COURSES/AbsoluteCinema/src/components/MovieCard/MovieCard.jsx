@@ -6,18 +6,20 @@ import { useEffect, useState } from 'react';
 
 
 function MovieCard({language, title, description, releaseDate, rating, image}) {
-    const [imageLoading, setImageLoading] = useState(false)
+    const [cardImage, setCardImage] = useState(placeholderImage)
 
     useEffect(() => { //срабатывает всегда, когда обновляется наш props image
         testImage(image)
     }, [image])
 
     function testImage(someImage) { // эта функция следит за изменениями фотографии
-        setImageLoading(true) // начало загрузки фотки
         const img = new Image() // <img />
         img.src = someImage // <img src="какая та ссылка" />
         img.onload = () => { //onload - когда фотка полностью загружается
-            setImageLoading(false) // конец загрузки фотки
+            setCardImage(someImage) // нормальная ссылка фильма
+        }
+        img.onerror = () => { // когда фотка не загрузилась
+            setCardImage(placeholderImage)
         }
 
     }
@@ -25,7 +27,7 @@ function MovieCard({language, title, description, releaseDate, rating, image}) {
     return (
         <>
         <Card>
-            <Card.Img className={classes.cardPoster} variant="top" src={imageLoading ? placeholderImage : image} loading='lazy'/>
+            <Card.Img className={classes.cardPoster} variant="top" src={cardImage} loading='lazy'/>
             <Card.Body>
             <Card.Text>
                 <Badge className={classes.language} bg="dark" text="light">
