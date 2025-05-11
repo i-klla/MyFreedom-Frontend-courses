@@ -2,16 +2,33 @@ import {Button, Card, Badge, Stack} from 'react-bootstrap';
 import classes from './MovieCard.module.css'
 import placeholderImage from '../../assets/images/placeholder-image.png';
 import { StarFillIcon } from '../../shared/Icons';
+import { useEffect, useState } from 'react';
 
 
-function MovieCard({language, title, description, releaseDate, rating, images}) {
+function MovieCard({language, title, description, releaseDate, rating, image}) {
+    const [imageLoading, setImageLoading] = useState(false)
+
+    useEffect(() => { //срабатывает всегда, когда обновляется наш props image
+        testImage(image)
+    }, [image])
+
+    function testImage(someImage) { // эта функция следит за изменениями фотографии
+        setImageLoading(true) // начало загрузки фотки
+        const img = new Image() // <img />
+        img.src = someImage // <img src="какая та ссылка" />
+        img.onload = () => { //onload - когда фотка полностью загружается
+            setImageLoading(false) // конец загрузки фотки
+        }
+
+    }
+
     return (
         <>
         <Card>
-            <Card.Img className={classes.cardPoster} variant="top" src={images || placeholderImage} />
+            <Card.Img className={classes.cardPoster} variant="top" src={imageLoading ? placeholderImage : image} loading='lazy'/>
             <Card.Body>
             <Card.Text>
-                <Badge bg="dark" text="light">
+                <Badge className={classes.language} bg="dark" text="light">
                     {language}
                 </Badge>
             </Card.Text >
@@ -37,7 +54,7 @@ function MovieCard({language, title, description, releaseDate, rating, images}) 
             </Card.Text>
             <div className='mb-3'>
                     <Stack direction='horizontal' gap='1'>
-                        <StarFillIcon/> {rating}/10
+                        <StarFillIcon/> <b>{rating.toFixed(1)}</b>/10
                     </Stack>
             </div>
             <Button variant="primary">See more</Button>
