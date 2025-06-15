@@ -4,13 +4,15 @@ import classes from "./HomePage.module.css";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+import { useSearchParams } from "react-router";
 
 function HomePage() {
-
+  const [params, setParams] = useSearchParams() // для работы с параметрами в URL
   const [popularMovies, setPopularMovies] = useState([])
-  const [currentPage, setCurrentPage] = useState(1)
+  const [currentPage, setCurrentPage] = useState(+params.get('page') || 1)
   const [loading, setLoading] = useState(false)
+ 
+  console.log(params)
 
   useEffect(() => {
     fetchPopularMovies(currentPage)
@@ -38,6 +40,8 @@ function HomePage() {
 
   function changePage(i) {
     setCurrentPage(i)
+    setParams({ page: i}) // обновляем параметры в URL
+    window.scrollTo(0, 0) // прокручиваем страницу вверх при смене страницы
   }
 
   let items = [];

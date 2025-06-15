@@ -3,10 +3,13 @@ import classes from './MovieCard.module.css'
 import placeholderImage from '../../assets/images/placeholder-image.png';
 import { StarFillIcon } from '../../shared/Icons';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router';
 
 
 function MovieCard({language, title, description, releaseDate, rating, image}) {
     const [cardImage, setCardImage] = useState(placeholderImage)
+    const navigate = useNavigate() // хук для навигации по страницам
+    // useNavigate - это функция, которая позволяет нам переходить на другие страницы
 
     useEffect(() => { //срабатывает всегда, когда обновляется наш props image
         testImage(image)
@@ -22,6 +25,10 @@ function MovieCard({language, title, description, releaseDate, rating, image}) {
             setCardImage(placeholderImage)
         }
 
+    }
+
+    function goToMoviePage() {
+        navigate('/movie')
     }
 
     return (
@@ -59,7 +66,7 @@ function MovieCard({language, title, description, releaseDate, rating, image}) {
                         <StarFillIcon/> <b>{rating.toFixed(1)}</b>/10
                     </Stack>
             </div>
-            <Button variant="primary">See more</Button>
+            <Button variant="primary" onClick={goToMoviePage}>See more</Button>
             </Card.Body>
         </Card>
         </>
