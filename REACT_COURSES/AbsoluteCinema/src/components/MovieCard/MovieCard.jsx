@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 
 
-function MovieCard({language, title, description, releaseDate, rating, image}) {
+function MovieCard({language, title, description, releaseDate, rating, image, id}) {
     const [cardImage, setCardImage] = useState(placeholderImage)
     const navigate = useNavigate() // хук для навигации по страницам
     // useNavigate - это функция, которая позволяет нам переходить на другие страницы
@@ -28,7 +28,7 @@ function MovieCard({language, title, description, releaseDate, rating, image}) {
     }
 
     function goToMoviePage() {
-        navigate('/movie')
+        navigate(`/movie/${id}`)
     }
 
     return (
