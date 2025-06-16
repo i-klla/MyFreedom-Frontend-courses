@@ -42,6 +42,10 @@
     }
 }
 
+ .backBtn {
+        margin-bottom: 20px;
+    }
+
 @media screen and (max-width: 750px) {
     .movieContainer {
         flex-direction: column;
